@@ -43,7 +43,7 @@ def download_file (file):
 def fun_foda ():
     count = 0
     while True:
-        comando_foda = input(' * Shell~%$: ' % str(ip))
+        comando_foda = input(' * Shell~%s: ' % str(ip))
         envio_dados(comando_foda)
         if comando_foda == 'sair':
             break
