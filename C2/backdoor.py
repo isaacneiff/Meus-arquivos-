@@ -9,7 +9,7 @@ def dados_rec():
     dados  = ''
     while True:
         try:
-            data = data + target.recv(1024).decode().rstrip()
+            data = dados + sock.recv(1024).decode().rstrip()
             return json.loads(data)
         except ValueError:
             continue
