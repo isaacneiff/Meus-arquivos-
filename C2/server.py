@@ -16,7 +16,7 @@ def dados_rec():
             continue
 
 #funcao recebimento dos dados em arquivo json
-def envio_dados():
+def envio_dados(data):
     jsondata = json.dumps(data)
     target.send(jsondata.encode())
 
@@ -37,7 +37,7 @@ def download_file (file):
         except socket.timeout as e:
             break
     target.setTimeout(None)
-    f.close
+    f.close()
 
 #funcao para o menu e comandos
 def fun_foda ():
